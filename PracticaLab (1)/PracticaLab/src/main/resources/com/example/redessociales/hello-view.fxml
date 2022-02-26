@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.redessociales.HelloController">
+   <children>
+      <Pane fx:id="login" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btn_log" layoutX="260.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#OnBtn_logClicked" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #ffffff;" text="Log In">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="217.0" layoutY="72.0" prefHeight="25.0" prefWidth="167.0" text="Log In" textFill="#00ff0d">
+               <font>
+                  <Font name="Microsoft New Tai Lue" size="32.0" />
+               </font></Label>
+            <TextField fx:id="user" layoutX="226.0" layoutY="164.0" promptText="Ingrese Usuario" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="btnRegister" layoutX="279.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#OnBtnRegisterClicked" style="-fx-background-color: #ffffff;" text="Enter" />
+         </children>
+      </Pane>
+      <Pane fx:id="register" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="typeR" layoutX="225.0" layoutY="175.0" prefWidth="150.0" promptText="Red Social" style="-fx-background-color: #ffffff;" />
+            <TextField fx:id="userR" layoutX="226.0" layoutY="227.0" promptText="Ingrese el usuario" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="btnR" layoutX="251.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#OnBtnRClicked" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #ffffff;" text="Crear" />
+            <Label alignment="CENTER" layoutX="223.0" layoutY="39.0" prefHeight="17.0" prefWidth="149.0" text="Registro" textFill="#00ff1e">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="redSocial" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ListView fx:id="infoPost" layoutX="300.0" layoutY="79.0" prefHeight="235.0" prefWidth="233.0" style="-fx-background-color: #ffffff;" />
+            <Label alignment="CENTER" layoutX="333.0" layoutY="37.0" prefHeight="25.0" prefWidth="167.0" text="Posts y Comentarios" textFill="#00ff2f">
+               <font>
+                  <Font name="MT Extra" size="18.0" />
+               </font></Label>
+            <Button fx:id="addFriend" layoutX="69.0" layoutY="243.0" mnemonicParsing="false" onMouseClicked="#OnaddFriendClicked" style="-fx-background-color: #ffffff;" text="Agregar Amigo" />
+            <TextField fx:id="userF" layoutX="43.0" layoutY="200.0" promptText="Agregar amigo (USUARIO)" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="post" layoutX="88.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#OnpostClicked" style="-fx-background-color: #ffffff;" text="Publicar" />
+            <TextField fx:id="txtSearch" layoutX="43.0" layoutY="300.0" promptText="Buscar Usuario" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="search" layoutX="92.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#OnsearchClicked" style="-fx-background-color: #ffffff;" text="Buscar" />
+            <TextArea fx:id="txtPost" layoutX="34.0" layoutY="28.0" prefHeight="102.0" prefWidth="167.0" promptText="Ingrese su Post" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="10.0" />
+               </font></TextArea>
+            <Button fx:id="btnShow" layoutX="338.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#OnbtnShowClicked" style="-fx-background-color: #ffffff;" text="Mostar post y comentarios" />
+         </children></Pane>
+   </children>
+</AnchorPane>
